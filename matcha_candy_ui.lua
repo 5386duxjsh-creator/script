@@ -9,7 +9,7 @@ local KEY_UNLOAD = 117 -- U
 local KEY_Z = 122
 local KEY_X = 120
 local DEFAULT_TOGGLE_KEY = 107 -- K
-local FAST_DELAY = 0.4
+local FAST_DELAY = 0.1
 local SLOW_DELAY = 3.0
 local CONFIG_PATH = "matcha_candy_toggle_key.txt"
 
@@ -136,7 +136,7 @@ local function refreshUI()
         or Color3.fromRGB(255, 115, 115)
     countText.Text = "Available: " .. tostring(state.available)
         .. " | Teleports: " .. tostring(state.collected)
-    speedText.Text = "Z = SLOWEST (3.0s)   |   X = FASTEST (0.4s)"
+    speedText.Text = "Z = SLOWEST (3.0s)   |   X = FASTEST (0.1s)"
     speedText.Color = state.speedMode == "FAST"
         and Color3.fromRGB(90, 235, 135)
         or Color3.fromRGB(255, 205, 105)
